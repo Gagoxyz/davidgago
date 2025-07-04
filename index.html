@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Gago | Desarrollador Web Fullstack</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-slate-800 font-outfit scroll-smooth">
+
+    <!-- NAVBAR -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition duration-300">
+        <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-center">
+            <ul
+                class="flex space-x-6 sm:space-x-10 md:space-x-12 lg:space-x-14 text-sm sm:text-base md:text-lg lg:text-xl font-medium">
+                <li><a href="#inicio" class="nav-link hover:text-amber-500 transition">Inicio</a></li>
+                <li><a href="#trayectoria" class="nav-link hover:text-amber-500 transition">Trayectoria laboral</a></li>
+                <li><a href="#sobre-mi" class="nav-link hover:text-amber-500 transition">Más sobre mí</a></li>
+                <li><a href="#proyectos" class="nav-link hover:text-amber-500 transition">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link hover:text-amber-500 transition">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio"
+        class="min-h-screen bg-yellow-50 flex items-center justify-center pt-24 px-8 md:px-20 xl:px-32">
+        <div class="max-w-5xl w-full flex flex-col-reverse md:grid md:grid-cols-8 gap-8 items-center">
+            <!-- Texto + Botones -->
+            <div class="md:col-span-5 w-full">
+                <p class="text-2xl mb-2">¡Hola! Mi nombre es</p>
+                <h1 class="text-5xl sm:text-7xl md:text-6xl lg:text-8xl font-extrabold leading-tight mb-4">
+                    David Gago
+                </h1>
+                <h2 class="text-2xl font-semibold mb-4">Desarrollador Web Fullstack</h2>
+                <p class="text-lg text-slate-700 mb-6">
+                    Del mundo de las redes a la programación. Apasionado por construir soluciones digitales útiles,
+                    enfocado en aprender y mejorar cada día.
+                </p>
+
+                <!-- Botones alineados a la izquierda -->
+                <div class="flex items-center gap-4">
+                    <!-- Descargar CV -->
+                    <a href="https://drive.google.com/file/d/1rVAStckLj3BVbBk2TwC0DfKdHKE6GHPa/view?usp=drive_link" target="_blank" class="px-6 py-3 rounded-full bg-gradient-to-r from-[#F2990A] to-[#DB7A06] text-white font-semibold shadow-md 
+          transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:brightness-110">
+                        Descargar CV
+                    </a>
+
+                    <!-- LinkedIn icono -->
+                    <a href="https://www.linkedin.com/in/david-gago-4139381a3/" target="_blank" class="px-6 py-3 rounded-full bg-gradient-to-r from-[#F2990A] to-[#DB7A06] text-white shadow-md 
+          transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:brightness-110"
+                        aria-label="LinkedIn">
+                        <svg class="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.25 8h4.5v13h-4.5V8zm7.5 0h4.3v1.8h.06c.6-1.1 2-2.26 4.14-2.26 4.4 0 5.2 2.9 5.2 6.6V21h-4.5v-6.5c0-1.6-.03-3.7-2.25-3.7-2.3 0-2.65 1.8-2.65 3.6V21h-4.5V8z" />
+                        </svg>
+                    </a>
+
+                    <!-- GitHub icono -->
+                    <a href="https://github.com/Gagoxyz" target="_blank" class="px-6 py-3 rounded-full bg-gradient-to-r from-[#F2990A] to-[#DB7A06] text-white shadow-md 
+          transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:brightness-110"
+                        aria-label="GitHub">
+                        <svg class="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.94.58.1.79-.25.79-.56v-2.02c-3.2.7-3.87-1.38-3.87-1.38-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.7.08-.7 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.72 1.27 3.38.97.1-.75.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.69 0-1.26.45-2.28 1.2-3.09-.12-.3-.52-1.51.12-3.15 0 0 .98-.31 3.2 1.18a11.1 11.1 0 012.91-.39c.99.01 1.99.13 2.91.39 2.22-1.49 3.2-1.18 3.2-1.18.64 1.64.24 2.85.12 3.15.75.81 1.2 1.83 1.2 3.09 0 4.42-2.71 5.4-5.29 5.68.42.37.8 1.1.8 2.22v3.29c0 .31.21.67.8.56A10.99 10.99 0 0023.5 12C23.5 5.73 18.27.5 12 .5z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Imagen -->
+            <div class="md:col-span-3 flex justify-center md:justify-end">
+                <div class="p-1 rounded-full border-4 border-amber-400 bg-white">
+                    <img src="images/foto_perfil.JPG" alt="Foto de David Gago"
+                        class="w-72 h-72 object-cover rounded-full shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ondulación invertida al final de la sección inicio -->
+    <div class="w-full overflow-hidden leading-[0]">
+        <svg class="block w-full h-20" viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none">
+            <path fill="#FFFBEB" d="
+      M0,0
+      L0,40
+      C360,80 1080,80 1440,40
+      L1440,0
+      Z
+    "></path>
+        </svg>
+    </div>
+
+    <!-- SECCIÓN TRAYECTORIA -->
+    <section id="trayectoria" class="bg-white py-20 px-8 md:px-20 xl:px-32">
+        <div class="max-w-5xl mx-auto">
+            <!-- Título centrado -->
+            <h2 class="text-4xl font-bold text-slate-800 mb-8 text-center">
+                Trayectoria laboral
+            </h2>
+
+            <!-- Recuadro -->
+            <div class="bg-slate-200 rounded-xl p-6 md:p-8 shadow-md text-slate-800 space-y-4 leading-relaxed">
+                <h3 class="text-2xl font-semibold">Experiencia en Telecomunicaciones y Redes</h3>
+                <p>
+                    Llevo más de 15 años en el sector de telecomunicaciones y redes. He trabajado en instalaciones sobre
+                    diferentes tipos de tecnologías como STB, XDSL, FTTH, entre otras.
+                </p>
+                <p>
+                    Durante los últimos años, desempeñé el rol de coordinador regional para el sector B2B.<br>En ese
+                    rol, mis
+                    responsabilidades incluían:
+                </p>
+
+                <!-- Lista con SVG check -->
+                <ul class="space-y-2">
+                    <li class="flex items-start gap-2">
+                        <!-- Check SVG -->
+                        <svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Coordinar un equipo de trabajadores.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Formación a nuevos trabajadores del sector.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Coordinar con grandes clientes como INDITEX, El Corte Inglés, Guardia Civil.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Configuración de equipos avanzados (TELDAT, CISCO).</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MÁS SOBRE MÍ -->
+    <section id="sobre-mi" class="bg-white py-20 px-8 md:px-20 xl:px-32">
+        <div class="max-w-5xl mx-auto">
+            <!-- Título centrado -->
+            <h2 class="text-4xl font-bold text-slate-800 mb-8 text-center">
+                Más sobre mí
+            </h2>
+
+            <!-- Recuadro con fondo más claro -->
+            <div class="bg-slate-100 rounded-xl p-6 md:p-8 shadow-md text-slate-800 space-y-6 leading-relaxed">
+                <p>
+                    Mi primer contacto con el mundo del desarrollo web fue a los 12 o 13 años, cuando <strong>creé mi
+                        primera
+                        "página" utilizando bloc de notas y HTML básico</strong>. En aquel entonces también descubrí
+                    PHP-Nuke, aunque
+                    me resultó demasiado complejo y lo acabé dejando de lado.
+                </p>
+                <p>
+                    A pesar de que decidí seguir el camino de las <strong>telecomunicaciones y redes</strong>, siempre
+                    tuve la espinita de dedicarme a lo que realmente me gustaba.
+                </p>
+                <p>
+                    Hoy puedo decir con orgullo que he completado el ciclo de <strong>Técnico Superior en Desarrollo de
+                        Aplicaciones
+                        Web</strong>, y con ello he podido retomar y potenciar aquello que un día me
+                    fascinó.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS -->
+    <section id="proyectos" class="bg-white py-20 px-8 md:px-20 xl:px-32">
+        <div class="max-w-5xl mx-auto">
+            <!-- Título centrado -->
+            <h2 class="text-4xl font-bold text-slate-800 mb-8 text-center">
+                Proyectos
+            </h2>
+
+            <!-- Proyecto 1 -->
+            <div
+                class="bg-slate-50 rounded-xl p-6 md:p-8 shadow-md text-slate-800 flex flex-col md:flex-row items-center gap-6 mb-10">
+                <!-- Texto y botones a la izquierda -->
+                <div class="flex-1 h-full flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3">Landing Page IronFit</h3>
+                        <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+                        <p class="mb-6 leading-relaxed">
+                            Landing page diseñada para un gimnasio ficticio, enfocada en una maquetación responsive,
+                            accesible y adaptable a dispositivos móviles. Incluye formularios funcionales para captación
+                            de leads y simulación de procesos de inscripción. Proyecto enfocado en la práctica de UI/UX
+                            y semántica HTML.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <!-- Botón Visitar sitio -->
+                        <a href="https://ironfit.vercel.app/" target="_blank"
+                            class="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full bg-gradient-to-r from-[#F2990A] to-[#DB7A06] text-white font-semibold shadow-md 
+               transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:brightness-110 flex items-center gap-2">
+                            Visitar sitio
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5 fill-white">
+                                <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+                            </svg>
+                        </a>
+
+                        <!-- Botón Código -->
+                        <a href="https://github.com/Gagoxyz/ironfit" target="_blank"
+                            class="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full bg-slate-800 text-white font-semibold shadow-md 
+               transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:bg-slate-700 flex items-center gap-2">
+                            Código
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.94.58.1.79-.25.79-.56v-2.02c-3.2.7-3.87-1.38-3.87-1.38-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.7.08-.7 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.72 1.27 3.38.97.1-.75.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.69 0-1.26.45-2.28 1.2-3.09-.12-.3-.52-1.51.12-3.15 0 0 .98-.31 3.2 1.18a11.1 11.1 0 012.91-.39c.99.01 1.99.13 2.91.39 2.22-1.49 3.2-1.18 3.2-1.18.64 1.64.24 2.85.12 3.15.75.81 1.2 1.83 1.2 3.09 0 4.42-2.71 5.4-5.29 5.68.42.37.8 1.1.8 2.22v3.29c0 .31.21.67.8.56A10.99 10.99 0 0023.5 12C23.5 5.73 18.27.5 12 .5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Imagen miniatura a la derecha -->
+                <div class="w-40 aspect-auto rounded-lg overflow-hidden shadow-lg flex-shrink-0">
+                    <img src="images/projects/ironfit-main-full.png" alt="IronFit principal"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="w-40 aspect-auto rounded-lg overflow-hidden shadow-lg flex-shrink-0">
+                    <img src="images/projects/ironfit-mainpng.png" alt="IronFit planes"
+                        class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- proyecto 2 -->
+            <div
+                class="bg-slate-50 rounded-xl p-6 md:p-8 shadow-md text-slate-800 flex flex-col md:flex-row items-center gap-6 mb-10">
+                <!-- Texto y botones a la izquierda -->
+                <div class="flex-1 h-full flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3">Tic-Tac-Toe con Chat en Tiempo Real</h3>
+                        <p><strong>Stack:</strong> Node.js + Express, JavaScript, WebSocket</p>
+                        <p class="mb-6 leading-relaxed">
+                            Aplicación multijugador del clásico 3 en raya. Implementa comunicación en tiempo real
+                            mediante WebSockets, permitiendo partidas interactivas entre dos jugadores conectados y un
+                            sistema de chat integrado. Incluye lógica de turnos, control de estado y sincronización
+                            entre clientes.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <!-- Botón Visitar sitio -->
+                        <a href="https://tic-tac-toe-socket-e1zm.onrender.com/" target="_blank"
+                            class="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full bg-gradient-to-r from-[#F2990A] to-[#DB7A06] text-white font-semibold shadow-md 
+               transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:brightness-110 flex items-center gap-2">
+                            Visitar sitio
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5 fill-white">
+                                <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+                            </svg>
+                        </a>
+
+                        <!-- Botón Código -->
+                        <a href="https://github.com/Gagoxyz/tic-tac-toe-socket" target="_blank"
+                            class="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full bg-slate-800 text-white font-semibold shadow-md 
+               transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:bg-slate-700 flex items-center gap-2">
+                            Código
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.94.58.1.79-.25.79-.56v-2.02c-3.2.7-3.87-1.38-3.87-1.38-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.7.08-.7 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.72 1.27 3.38.97.1-.75.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.69 0-1.26.45-2.28 1.2-3.09-.12-.3-.52-1.51.12-3.15 0 0 .98-.31 3.2 1.18a11.1 11.1 0 012.91-.39c.99.01 1.99.13 2.91.39 2.22-1.49 3.2-1.18 3.2-1.18.64 1.64.24 2.85.12 3.15.75.81 1.2 1.83 1.2 3.09 0 4.42-2.71 5.4-5.29 5.68.42.37.8 1.1.8 2.22v3.29c0 .31.21.67.8.56A10.99 10.99 0 0023.5 12C23.5 5.73 18.27.5 12 .5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Imagen miniatura a la derecha -->
+                <div class="w-40 aspect-auto rounded-lg overflow-hidden shadow-lg flex-shrink-0">
+                    <img src="images/projects/tica-tac-toe-main.png" alt="Tic-tac-toe principal"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="w-40 aspect-auto rounded-lg overflow-hidden shadow-lg flex-shrink-0">
+                    <img src="images/projects/tica-tac-toe-chat.png" alt="Tic-tac-toe tablero"
+                        class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div
+                class="bg-slate-50 rounded-xl p-6 md:p-8 shadow-md text-slate-800 flex flex-col md:flex-row items-center gap-6 mb-10">
+                <!-- Texto y botones a la izquierda -->
+                <div class="flex-1 h-full flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3"> Trello-style Todo App (con Backend y Autenticación)
+                        </h3>
+                        <p><strong>Stack:</strong> Node.js + Express, MongoDB, HTML/CSS/JS</p>
+                        <p class="mb-6 leading-relaxed">
+                            Aplicación tipo Trello con autenticación de usuarios (registro/login con MongoDB). Permite
+                            crear, organizar y mover tareas entre columnas con funcionalidad drag & drop. Incluye
+                            integración con base de datos, protección de rutas y manejo completo del ciclo de vida de
+                            tareas.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <!-- Botón Visitar sitio -->
+                        <a href="https://todo-app-uws4.onrender.com/" target="_blank"
+                            class="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full bg-gradient-to-r from-[#F2990A] to-[#DB7A06] text-white font-semibold shadow-md 
+               transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:brightness-110 flex items-center gap-2">
+                            Visitar sitio
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5 fill-white">
+                                <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+                            </svg>
+                        </a>
+
+                        <!-- Botón Código -->
+                        <a href="https://github.com/Gagoxyz/todo-app" target="_blank"
+                            class="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-full bg-slate-800 text-white font-semibold shadow-md 
+               transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:bg-slate-700 flex items-center gap-2">
+                            Código
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.94.58.1.79-.25.79-.56v-2.02c-3.2.7-3.87-1.38-3.87-1.38-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.7.08-.7 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.72 1.27 3.38.97.1-.75.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.69 0-1.26.45-2.28 1.2-3.09-.12-.3-.52-1.51.12-3.15 0 0 .98-.31 3.2 1.18a11.1 11.1 0 012.91-.39c.99.01 1.99.13 2.91.39 2.22-1.49 3.2-1.18 3.2-1.18.64 1.64.24 2.85.12 3.15.75.81 1.2 1.83 1.2 3.09 0 4.42-2.71 5.4-5.29 5.68.42.37.8 1.1.8 2.22v3.29c0 .31.21.67.8.56A10.99 10.99 0 0023.5 12C23.5 5.73 18.27.5 12 .5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Imagen miniatura a la derecha -->
+                <div class="w-40 aspect-auto rounded-lg overflow-hidden shadow-lg flex-shrink-0">
+                    <img src="images/projects/todo-app-main-full.png" alt="Trello login"
+                        class="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+                </div>
+                <div class="w-40 aspect-auto rounded-lg overflow-hidden shadow-lg flex-shrink-0">
+                    <img src="images/projects/todo-app-dashboard-full.png" alt="Trello dashboard"
+                        class="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+                </div>
+            </div>
+        </div>
+
+        <!-- Conocimientos -->
+        <div class="max-w-5xl mx-auto">
+            <!-- Título Conocimientos -->
+            <h2 class="text-4xl font-bold text-slate-800 mb-8 text-center">Conocimientos</h2>
+
+            <!-- Contenedor de Conocimientos -->
+            <div class="bg-slate-50 rounded-xl p-6 md:p-8 shadow-md text-slate-800 mb-10">
+                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 sm:gap-6 place-items-center">
+                    <!-- HTML5 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            class="w-10 h-10 mb-1" alt="HTML5" />
+                        <span class="text-s font-medium">HTML5</span>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            class="w-10 h-10 mb-1" alt="CSS3" />
+                        <span class="text-s font-medium">CSS3</span>
+                    </div>
+
+                    <!-- Bootstrap -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                            class="w-10 h-10 mb-1" alt="Bootstrap" />
+                        <span class="text-s font-medium">Bootstrap</span>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            class="w-10 h-10 mb-1" alt="JavaScript" />
+                        <span class="text-s font-medium">JavaScript</span>
+                    </div>
+
+                    <!-- Node.js -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                            class="w-10 h-10 mb-1" alt="Node.js" />
+                        <span class="text-s font-medium">Node.js</span>
+                    </div>
+
+                    <!-- Express (sin logo oficial visible) -->
+                    <div class="flex flex-col items-center text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="w-10 h-10 mb-1"
+                            alt="Express">
+                            <path
+                                d="M49.729 11h-.85c-1.051 0-2.041.49-2.68 1.324l-8.7 11.377-8.7-11.377C28.162 11.49 27.171 11 26.121 11h-.85l10.971 14.346L25.036 40h.85c1.051 0 2.041-.49 2.679-1.324L37.5 26.992l8.935 11.684C47.073 39.51 48.063 40 49.114 40h.85L38.758 25.346 49.729 11zM21.289 34.242c-2.554 3.881-7.582 5.87-12.389 4.116C4.671 36.815 2 32.611 2 28.109L2 27h12v0h11l0-4.134c0-6.505-4.818-12.2-11.295-12.809C6.273 9.358 0 15.21 0 22.5l0 5.573c0 5.371 3.215 10.364 8.269 12.183 6.603 2.376 13.548-1.17 15.896-7.256 0 0 0 0 0 0h-.638C22.616 33 21.789 33.481 21.289 34.242zM2 22.5C2 16.71 6.71 12 12.5 12S23 16.71 23 22.5V25H2V22.5z">
+                            </path>
+                        </svg>
+                        <span class="text-s font-medium">Express</span>
+                    </div>
+
+                    <!-- Java -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                            class="w-10 h-10 mb-1" alt="Java" />
+                        <span class="text-s font-medium">Java</span>
+                    </div>
+
+                    <!-- PHP -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                            class="w-10 h-10 mb-1" alt="PHP" />
+                        <span class="text-s font-medium">PHP</span>
+                    </div>
+
+                    <!-- Laravel (logo corregido) -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+                            class="w-10 h-10 mb-1" alt="Laravel" />
+                        <span class="text-s font-medium">Laravel</span>
+                    </div>
+
+                    <!-- Git -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                            class="w-10 h-10 mb-1" alt="Git" />
+                        <span class="text-s font-medium">Git</span>
+                    </div>
+
+                    <!-- GitHub (versión fondo blanco) -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            class="w-10 h-10 mb-1" alt="GitHub" />
+                        <span class="text-s font-medium">GitHub</span>
+                    </div>
+
+                    <!-- Docker -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                            class="w-10 h-10 mb-1" alt="Docker" />
+                        <span class="text-s font-medium">Docker</span>
+                    </div>
+
+                    <!-- MySQL -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                            class="w-10 h-10 mb-1" alt="MySQL" />
+                        <span class="text-s font-medium">MySQL</span>
+                    </div>
+
+                    <!-- MongoDB -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                            class="w-10 h-10 mb-1" alt="MongoDB" />
+                        <span class="text-s font-medium">MongoDB</span>
+                    </div>
+
+                    <!-- WordPress -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                            class="w-10 h-10 mb-1" alt="WordPress" />
+                        <span class="text-s font-medium">WordPress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="bg-white py-20 px-8 md:px-20 xl:px-32 pb-40">
+        <div class="max-w-5xl mx-auto">
+            <!-- Título -->
+            <h2 class="text-4xl font-bold text-slate-800 mb-10 text-center">
+                Contacto
+            </h2>
+
+            <!-- Contenedor -->
+            <div class="bg-white border-2 border-amber-400 rounded-xl px-6 py-10 shadow-md">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-36 text-lg text-slate-800">
+
+                    <!-- Columna izquierda -->
+                    <div class="flex flex-col space-y-8 pl-12 md:pl-24">
+                        <!-- Email -->
+                        <div id="email" class="flex justify-between items-center cursor-pointer group relative"
+                            title="Haz clic para copiar email">
+                            <div class="flex items-center gap-4 group-hover:text-amber-500 transition">
+                                <i class="fa-solid fa-envelope text-2xl text-slate-700"></i>
+                                <span class="font-medium">dgagoc@gmail.com</span>
+                                <i class="fa-solid fa-copy text-lg text-slate-500 group-hover:text-amber-500"></i>
+                                <span id="copiado"
+                                    class="absolute -bottom-6 left-0 text-sm text-green-600 hidden">¡Copiado!</span>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/610991463" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-4 hover:text-amber-500 transition cursor-pointer">
+                            <i class="fa-brands fa-whatsapp text-2xl text-green-500"></i>
+                            <span class="font-medium">Contactar por WhatsApp</span>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/gagoxyz" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-4 hover:text-amber-500 transition cursor-pointer">
+                            <i class="fa-brands fa-github text-2xl text-black"></i>
+                            <span class="font-medium">Perfil de GitHub</span>
+                        </a>
+                    </div>
+
+                    <!-- Columna derecha -->
+                    <div class="flex flex-col space-y-8 pl-12 md:pl-24">
+                        <!-- Teléfono -->
+                        <div class="flex items-center gap-4 hover:text-amber-500 transition">
+                            <i class="fa-solid fa-mobile-screen text-2xl text-slate-700"></i>
+                            <span class="font-medium">+34 610 991 463</span>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/david-gago-4139381a3/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-4 hover:text-amber-500 transition cursor-pointer">
+                            <i class="fa-brands fa-linkedin text-2xl text-blue-700"></i>
+                            <span class="font-medium">Perfil de LinkedIn</span>
+                        </a>
+
+                        <!-- Descargar CV -->
+                        <a href="https://drive.google.com/file/d/1rVAStckLj3BVbBk2TwC0DfKdHKE6GHPa/view?usp=drive_link" target="_blank"
+                            class="flex items-center gap-4 hover:text-amber-500 transition cursor-pointer"
+                            title="Descargar CV">
+                            <i class="fa-solid fa-file-pdf text-2xl text-red-600"></i>
+                            <span class="font-medium">Descargar CV</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS externo -->
+    <script type="module" src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</body>
+
+</html>

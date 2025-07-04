@@ -1,0 +1,49 @@
+# Dependencias
+/node_modules
+/vendor
+/.bundle
+/bin
+*.gem
+*.rbc
+
+# Entornos y archivos de configuración
+/.env
+/.env.local
+/.env.development
+/.env.test
+/.env.production
+/.venv
+venv/
+
+# Logs y archivos temporales
+/logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+# Archivos de compilación
+/dist
+/build
+/out
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Editor e IDE
+/.idea
+/.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing
+/coverage
+.nyc_output
+
+# Sistemas operativos
+Thumbs.db
