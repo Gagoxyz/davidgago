@@ -17,8 +17,8 @@ El sitio está construido como una **landing de una sola página**, organizada e
 ## ▶️ Cómo ejecutarlo localmente
 
 ```bash
-git clone https://github.com/Gagoxyz/portafolio.git
-cd portafolio
+git clone https://github.com/Gagoxyz/davidgago.git
+cd davidgago
 npm install
 npm run dev
 ```
